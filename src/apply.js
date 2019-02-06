@@ -6,7 +6,7 @@ const applicant1 = {
 };
 
 const newApplicant = {
-    firstName: 'Kelly',
+    firstName: 'KellAnnie',
     lastName: 'Scampath', 
     skill: 'public aging',
     faveFood: 'a single jalapeno pepper once a week'
