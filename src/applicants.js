@@ -11,14 +11,19 @@ for(let index = 0; index < applicants.length; index++) {
 
     const tr = document.createElement('tr');
     const firstNameCell = document.createElement('td');
+    let link = document.createElement('a');
+    link.target = 'blank';
+    link.href = 'applicant-detail.html?name=' + encodeURIComponent(applicant.firstName);
+    link.textContent = applicant.firstName;
+    link.appendChild(firstNameCell);
+    tr.appendChild(link);
     const lastNameCell = document.createElement('td');
-    tr.appendChild(firstNameCell);
-
-    firstNameCell.textContent = applicant.firstName;
     lastNameCell.textContent = applicant.lastName;
     tr.appendChild(lastNameCell);
 
     tbodyNode.appendChild(tr);
+
+    console.log(link);
 }
 
 
